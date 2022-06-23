@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>【入会キャンペーン中！】フィットネスジム</title>
+    <link rel="stylesheet" href="./css/ress.min.css" />
+    <script
+      src="https://kit.fontawesome.com/026f5a83cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/jquery.yycountdown.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <!-- 固定の申込フォーム -->
+    <div id="application-cover">
+      <a class="application-btn btn-link" href="#application"></a>
+    </div>
+    <!-- トップページ -->
+    <div id="top" class="top-wrapper">
+      <div class="top-img-area">
+        <div class="img-cover">
+          <div class="top-img animate__animated animate__fadeIn"></div>
+        </div>
+      </div>
+      <div class="top-parts">
+        <img class="animate__animated animate__fadeIn animate__delay-05s" src="./img/top-hito.png" alt="トップ人物" />
+        <h1 class="animate__animated animate__fadeInDown">痩せるだけじゃ物足りない!?<br>新しい自分を始めよう。</h1>
+        <a class="btn-link animate__animated animate__pulse animate__slow animate__infinite	infinite" href="#application"
+          >無料見学会<br />実施中<br /><span class="top-text-span"
+            >随時受付</span
+          ></a
+        >
+        <div class="top-campaign-box">
+          <div class="top-campaing-item">
+            <img src="./img/top-natu.png" alt="花火" />
+            <p>夏の入会特別<br>キャンペーン!!</p>
+            <p>期間限定：7/31（日）まで</p>
+            <div class="top-campaing-sub-box">
+              <div class="top-campaing-item-box animate__animated animate__fadeInUp">
+                <p>
+                  事務手数料<br /><span class="text-line">3,000円</span
+                  ><br />↓<br /><span class="text-large">0</span>
+                </p>
+              </div>
+              <div class="top-campaing-item-box animate__animated animate__fadeInUp animate__delay-03s">
+                <p>
+                  初月の<br />会費<br />↓<br /><span class="text-large">0</span>
+                </p>
+              </div>
+              <div class="top-campaing-item-box animate__animated animate__fadeInUp animate__delay-05s">
+                <p>
+                  入会金<br /><span class="text-line">5,000円</span
+                  ><br />↓<br /><span class="text-large">0</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 悩み -->
+    <div class="worries-wrapper">
+      <img src="./img/nayami.png" alt="悩んでいる女性" />
+      <h2>夏を楽しめる“からだ”の<br>準備はできていますか？</h2>
+      <div class="worries-area">
+        <p class="worries-text">ダイエットに失敗したことがある</p>
+        <p class="worries-text">運動が苦手で続かない</p>
+        <p class="worries-text">無理な食事制限はしたくない</p>
+        <p class="worries-text">最近おなか周りのお肉が気になる</p>
+        <p class="worries-text">去年買った服のサイズが合わない</p>
+        <p class="worries-text">目に見える効果を感じたい</p>
+      </div>
+      <h2>そんなお悩みのあなたも</h2>
+    </div>
+    <!-- 解決-->
+    <div class="solution-wrapper">
+      <div class="solution-title">
+        <h2>DEMOFITNESSではお客様一人一人の<br />ご要望にしっかりお答え致します</h2>
+      </div>
+      <div class="solution-contents-area">
+        <div class="solution-contents-box solution-img-1 up-js animate__animated">
+          <div class="solution-item">
+            <h3>ダイエット</h3>
+            <p>
+              DEMOFITNESSの経験豊富なトレーナーが、あなたの目的に応じて最適なプログラムをご提案いたします。
+            </p>
+          </div>
+        </div>
+        <div class="solution-contents-box solution-img-2 up-js animate__animated animate__delay-03s">
+          <div class="solution-item">
+            <h3>食事指導</h3>
+            <p>
+              運動だけでは手に入らない理想の肉体を手に入れるため、管理栄養士のアドバイスを受けながら適切な食事・栄養管理を実践！
+            </p>
+          </div>
+        </div>
+        <div class="solution-contents-box solution-img-3 up-js animate__animated animate__delay-05s">
+          <div class="solution-item">
+            <h3>ボディメイク</h3>
+            <p>
+              最新のトレーニングマシーンとトレーニング理論によって最短で理想のボディを作ります。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- キャンペーン -->
+        <div class="campaign-wrapper">
+          <img src="./img/imadake.gif" alt="今だけ">
+          <img src="./img/canpaign-hito.png" alt="喜ぶ">
+          <h2>夏の入会キャンペーン</h2>
+          <div class="campaign-date"><p>7月31日<br>まで</p></div>
+          <div class="timer-box">
+            <p>残り</p>
+            <div id="timer"></div>
+          </div>
+          <div class="campaign-price-area">
+            <div class="campaign-pric-box">
+              <p class="price-title">事務手数料</p>
+              <p class="price-before">3,000<span class="price-en">円</span></p>
+              <p class="price-after">0<span>円</span></p>
+            </div>
+            <div class="campaign-pric-box">
+              <p class="price-title">入会金</p>
+              <p class="price-before">5,000<span class="price-en">円</span></p>
+              <p class="price-after">0<span>円</span></p>
+            </div>
+            <div class="campaign-pric-box">
+              <p class="price-title">初月の会費</p>
+              <p class="price-before">8,600<span class="price-en">円</span></p>
+              <p class="price-after">0<span>円</span></p>
+            </div>
+          </div>
+          <button class="canpaign-btn animate__animated animate__pulse animate__slow animate__infinite	infinite">
+            <a class="btn-link" href="#application">今すぐ予約お申込み</a>
+          </buttun>
+        </div>
+    <!-- 選ばれる理由 -->
+    <div class="cause-wrapper">
+      <div class="cause-title-box">
+        <h2>DEMOFITNESSが選ばれる<span>3</span>つの理由</h2>
+      </div>
+      <div class="cause-box">
+        <div class="cause-text-area">
+          <div class="point-box">
+            <p>POINT<br><span class="cause-large">01</span></p>
+          </div>
+          <h3>経験豊富なトレーナー</h3>
+          <p>目標の設定から、うまくできない動作、レベル調整など、トレーニング中の疑問は担当トレーナーが親身にお応えいたします。<br>初回無料のパーソナルトレーニングで、フォームのチェックからトレーニング内容の調整、トレーニングを効果的に行うコツなど、トレーナーがアドバイスを行います。</p>
+        </div>
+        <img src="./img/trainer.jpg" alt="トレーナー">
+      </div>
+      <div class="cause-box">
+        <div class="cause-text-area cause-text-area-second">
+          <div class="point-box">
+            <p>POINT<br><span class="cause-large">02</span></p>
+          </div>
+          <h3>結果の出るクラブ</h3>
+          <p>7割を超えるお客様が目標を達成しています!</p>
+          <ul>
+            <li>2か月で7㎏体重落ちました!(40代女性)</li>
+            <li>ウエストサイズが8㎝ダウンしました!(20代女性)</li>
+            <li>3年前の服が着れるようになりました!(30代女性)</li>
+            <li>出ていたおなかがへこむどころか割れました!(30代男性)</li>
+          </ul>
+        </div>
+        <img src="./img/target.jpg" alt="目標">
+      </div>
+      <div class="cause-box">
+        <div class="cause-text-area">
+          <div class="point-box">
+            <p>POINT<br><span class="cause-large">03</span></p>
+          </div>
+        <h3>充実した設備</h3>
+        <p>ダンススタジオからマシンジム、プールやサウナ、大浴場など気持ちよく過ごすことのできる設備が充実しています。</p>
+        </div>
+        <div class="cause-img-box">
+          <div class="img-box">
+          <img src="./img/institution1.jpg" alt="マシン">
+          <img src="./img/institution2.jpg" alt="プール">            
+          </div>
+          <div class="img-box">
+          <img src="./img/institution3.jpg" alt="サウナ">
+          <img src="./img/institution4.jpg" alt="銭湯">            
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- キャンペーン -->
+        <div class="campaign-wrapper">
+          <img src="./img/imadake.gif" alt="今だけ">
+          <img src="./img/canpaign-hito.png" alt="喜ぶ">
+          <h2>夏の入会キャンペーン</h2>
+          <div class="campaign-date"><p>7月31日<br>まで</p></div>
+          <div class="timer-box">
+            <p>残り</p>
+            <div id="timer02"></div>
+          </div>
+          <div class="campaign-price-area">
+            <div class="campaign-pric-box">
+              <p class="price-title">事務手数料</p>
+              <p class="price-before">3,000<span class="price-en">円</span></p>
+              <p class="price-after">0<span>円</span></p>
+            </div>
+            <div class="campaign-pric-box">
+              <p class="price-title">入会金</p>
+              <p class="price-before">5,000<span class="price-en">円</span></p>
+              <p class="price-after">0<span>円</span></p>
+            </div>
+            <div class="campaign-pric-box">
+              <p class="price-title">初月の会費</p>
+              <p class="price-before">8,600<span class="price-en">円</span></p>
+              <p class="price-after">0<span>円</span></p>
+            </div>
+          </div>
+          <button class="canpaign-btn  animate__animated animate__pulse animate__slow animate__infinite	infinite">
+            <a class="btn-link" href="#application">今すぐ予約お申込み</a>
+          </buttun>
+        </div>
+      <!-- お申し込みへの流れ -->
+      <div class="flow-wrapper">
+        <h2>DEMOFITNESSご利用の流れ</h2>
+        <div class="flow-box">
+          <div class="flow-text-box">
+            <h3>ご希望日時にご予約<br>又は直接のご来店</h3>
+            <div class="flow-text-box-p bor-left">
+              <p>スタッフ対応時間内に受付可能です。ご予約なしでもお気軽にご来館ください。</p>
+            </div>
+          </div>
+          <img src="./img/flow1.jpg" alt="">
+        </div>
+        <div class="flow-box">
+          <div class="flow-text-box">
+            <h3>ご来館</h3>
+            <div class="flow-text-box-p">
+              <p>実際にご来館いただき、受付スタッフに見学、体験、入会のご希望をお伝えください。</p>
+            </div>
+          </div>
+          <img src="./img/flow2.jpg" alt="">
+        </div>
+        <div class="flow-box">
+          <div class="flow-text-box">
+            <h3>ご説明</h3>
+            <div class="flow-text-box-p">
+              <p>スタッフにより当フィットネスクラブの説明をさせていただきます。即時入会希望の方はこちらでお手続きをお願いいたします。</p>
+            </div>
+          </div>
+          <img src="./img/flow3.jpg" alt="">
+        </div>
+        <div class="flow-box">
+          <div class="flow-text-box">
+            <h3>見学・体験又はご利用の開始</h3>
+            <div class="flow-text-box-p">
+              <p>ご説明の後、実際に見学・体験・ジムのご利用を開始していただきます。</p>
+            </div>
+          </div>
+          <img src="./img/flow4.jpg" alt="">
+        </div>
+      </div>
+      
+      <!-- アクセス -->
+      <div id="access" class="access-wrapper">
+        <h2>アクセス</h2>
+        <p>ACCESS</p>
+        <div class="access-area">
+          <div class="acssess-text-box">
+            <img src="./img/sisetu.jpg" alt="施設">
+            <div class="acssess-text-area">
+            <div class="text-left">
+              <p>〒</p>
+              <p>住所</p>
+              <p>TEL</p>
+              <p>営業時間</p>
+              <p>定休日</p>
+            </div>
+            <div class="text-right">
+              <p>000-0000</p>
+              <p>愛知県名古屋市中村区00-0</p>
+              <p>0000-00-0000</p>
+              <p>9:00~23:00</p>
+              <p>月曜日</p>
+            </div>              
+            </div>
+          </div>
+          <div id="google-map">
+          </div>
+        </div>
+      </div>
+      <!-- 見学体験・入会予約フォーム -->
+      <div id="application">
+        <div class="form-wrapper">
+          <h2>お申し込みフォーム</h2>
+          <form id="contact_form" action="" method="">
+            <div class="selection form-box">
+              <p class="mandatory">予約内容</p>
+              <div class="radio-box">
+                <input class="visually-hidden" type="radio" name="selection" value="1" id="join"/>
+                <label for="join">今すぐ入会</label>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="selection"
+                  value="2"
+                  id="experience"
+                />
+                <label for="experience">ご見学・無料体験</label>
+              </div>
+            </div>
+            <div class="form-name form-box">
+              <label class="mandatory" for="name"
+                >お名前</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                value=""
+                placeholder="山田　太郎"
+              />
+            </div>
+            <div class="form-name-kana form-box">
+              <label class="mandatory" for="name-kana"
+                >フリガナ</label
+              >
+              <input
+                type="text"
+                name="name-kana"
+                id="name-kana"
+                value=""
+                placeholder="ヤマダ　タロウ"
+              />
+            </div>
+            <div class="email form-box">
+              <label class="mandatory" for="email"
+                >メールアドレス
+              </label>
+              <input type="text" id="email" name="name" value="" />
+            </div>
+            <div class="phone form-box">
+              <label class="mandatory" for="phone"
+                >電話番号</label
+              >
+              <input
+                type="text"
+                id="phone"
+                name="name"
+                value=""
+                placeholder="ハイフンなし半角数字"
+              />
+            </div>
+            <div class="form-date form-box">
+              <label class="mandatory" for="">ご希望日</label>
+              <select name="date" id="date" size="1">
+                <option value="">日時を選択してください</option>
+                <option value="1">2022/06/15 10:00</option>
+                <option value="2">2022/06/15 12:00</option>
+                <option value="3">2022/06/15 14:00</option>
+                <option value="4">2022/06/15 16:00</option>
+                <option value="5">2022/06/15 18:00</option>
+                <option value="6">2022/06/15 20:00</option>
+                <option value="7">2022/06/16 10:00</option>
+                <option value="8">2022/06/16 12:00</option>
+                <option value="9">2022/06/16 14:00</option>
+              </select>
+              <div class="form-questions form-box">
+                <textarea
+                  name="questions"
+                  id="questions"
+                  cols="52"
+                  rows="4"
+                  placeholder="自由にご質問等を記述してください"
+                ></textarea>
+              </div>
+            </div>
+            <div id="form-has-error"></div>
+            <div class="form-button form-box">
+              <button id="submit-btn" type="submit">
+                お申し込みを確定する
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    <!-- topへ戻るボタン -->
+    <button id="page-link" class="return">
+      <a href="#top" class="return-btn">
+        <i class="fa-solid fa-angles-up fa-fade"></i>
+      </a>
+    </button>
+    <!-- フッター -->
+    <footer>
+      <p>&copy;2022 Satoshi Yoshizawa</p>
+    </footer>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
+    <script src="./js/jquery.yycountdown.min.js"></script>
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsa122eikKIgIuF7NxFcCpEnsEMq3WbIo&callback=initMap&libraries=&v=weekly"></script>
+  </body>
+</html>
